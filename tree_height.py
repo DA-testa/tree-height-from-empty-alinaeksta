@@ -20,8 +20,8 @@ def main():
         print(text)
     else:
         with open("./test/16", mode="r") as fails:
-        text = fails.readline()
-        print(text)
+            text = fails.readline()
+            print(text)
     # implement input form keyboard and from files
      
 

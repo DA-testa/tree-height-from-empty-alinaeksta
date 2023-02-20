@@ -13,7 +13,7 @@ def compute_height(n, parents):
 
 def main():
     # implement input form keyboard and from files
-     test_url = 
+     test_url = "https://github.com/DA-testa/steks-un-iekavas-alinaeksta/blob/main/test/0"
      check = input()
     if check.startswith("I"):
         text = input()

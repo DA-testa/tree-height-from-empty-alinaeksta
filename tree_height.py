@@ -2,7 +2,7 @@
 
 import sys
 import threading
-import requests
+import numpy
 
 
 def compute_height(n, parents):
@@ -16,10 +16,12 @@ def main():
     test_url = "https://github.com/DA-testa/steks-un-iekavas-alinaeksta/blob/main/test/0"
     check = input()
     if check.startswith("I"):
-        text = input()
+        text = int(input().split())
+        print(text)
     else:
-        text = requests.get(test_url).text
-        
+        with open("./test/16", mode="r") as fails:
+        text = fails.readline()
+        print(text)
     # implement input form keyboard and from files
      
 

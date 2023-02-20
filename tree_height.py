@@ -16,7 +16,7 @@ def main():
     test_url = "https://github.com/DA-testa/steks-un-iekavas-alinaeksta/blob/main/test/0"
     check = input()
     if check.startswith("I"):
-        text = int(input().split())
+        text = int(input())
         print(text)
     else:
         with open("./test/16", mode="r") as fails:

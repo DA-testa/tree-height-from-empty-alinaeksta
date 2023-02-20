@@ -13,7 +13,13 @@ def compute_height(n, parents):
 
 def main():
     # implement input form keyboard and from files
-    
+     test_url = 
+     check = input()
+    if check.startswith("I"):
+        text = input()
+    else:
+        text = requests.get(test_url).text
+
     # let user input file name to use, don't allow file names with letter a
     # account for github input inprecision
     

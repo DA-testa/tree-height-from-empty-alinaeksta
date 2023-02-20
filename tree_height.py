@@ -2,6 +2,7 @@
 
 import sys
 import threading
+import requests
 
 
 def compute_height(n, parents):

@@ -39,7 +39,7 @@ def main():
 def compute_height(n, parents):
   # Write this function
   # heights = np.array()
-  counter = 1
+  counter = 0
   # max_height = 0
   # Your code here
   for i in range(n):
@@ -47,12 +47,14 @@ def compute_height(n, parents):
     if parents[i] == "-1":
       start = i
       counter = counter + 1
+      break
                  
-  for i in range (n):
-    
-    if parents[i] == str(start):
-      start = i
+  for g in range (n):
+    val = start
+    if parents[g] == str(val):
+      val = g
       counter = counter + 1
+
       
 
   

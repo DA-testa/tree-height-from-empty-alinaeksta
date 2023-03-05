@@ -25,7 +25,7 @@ def compute_height(n, parents):
     zeros = np.zeros(n)
     def height(i):
         if zeros[i] != 0:
-            return tree[i]
+            return zeros[i]
         elif parents[i] == -1: 
             zeros[i] = 1
         else: 

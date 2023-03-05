@@ -12,7 +12,7 @@ def main():
     main = list(map(int,input().split()))
     print(compute_height(count, main))
     
-  else if "F" in letter:
+  elif "F" in letter:
     filename = input()
     if "a" not in filename:
       with open(str("test/"+filename), mode="r") as fails:
@@ -26,7 +26,7 @@ def compute_height(n, parents):
     def height(i):
         if zeros[i] != 0:
             return tree[i]
-        else if parents[i] == -1: 
+        elif parents[i] == -1: 
             zeros[i] = 1
         else: 
             zeros[i] = height(parents[i]) + 1
